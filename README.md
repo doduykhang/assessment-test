@@ -43,3 +43,6 @@ cd search-engine/frontend
 npm install
 npm run dev
 ```
+
+## Demo
+http://khang-search-engine.s3-website-us-east-1.amazonaws.com/
