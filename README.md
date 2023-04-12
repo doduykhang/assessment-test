@@ -31,13 +31,13 @@ NestJS for REST API
 NuxtJS for UI
 
 ## Installation
-# Backend 
+### Backend 
 `
 cd search-engine
 docker-compose up
 `
 
-# Frontend
+### Frontend
 `
 cd search-engine/frontend
 npm install
