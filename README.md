@@ -32,14 +32,14 @@ NuxtJS for UI
 
 ## Installation
 ### Backend 
-`
+```
 cd search-engine
 docker-compose up
-`
+```
 
 ### Frontend
-`
+```
 cd search-engine/frontend
 npm install
 npm run dev
-`
+```
