@@ -1,0 +1,28 @@
+version: '3'
+
+networks:
+  my_network:
+    driver: bridge
+
+services:
+  search-engine-backend:
+    build: 
+      context: ./backend
+      dockerfile: ./Dockerfile
+    ports:
+      - 8080:8080
+    networks:
+      - my_network
+    deploy:
+      mode: replicated
+      replicas: 1
+    environment:
+      PORT: 8080
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+    restart: always
+  redis:
+    image: redis/redis-stack-server:latest
+    restart: always
+    networks:
+      - my_network

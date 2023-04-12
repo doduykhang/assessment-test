@@ -24,3 +24,22 @@ You should also update this README to include instructions on how to run your se
 Tests are not mandatory but will be considered bonus points if you provide them.
 
 This challenge should take a day at most. It is not expected to be a production ready application and thus will not be evaluated in such a context.
+
+## Technology
+Redis Search for fuzzy search
+NestJS for REST API
+NuxtJS for UI
+
+## Installation
+# Backend 
+`
+cd search-engine
+docker-compose up
+`
+
+# Frontend
+`
+cd search-engine/frontend
+npm install
+npm run dev
+`
